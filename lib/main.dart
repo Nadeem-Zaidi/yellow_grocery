@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:grocery_yellow/authentication2/auth2_bloc/phone_number_signin_cubit.dart';
 import 'package:grocery_yellow/authentication2/phone_state/phone_auth_cubit.dart';
+import 'package:grocery_yellow/blocs/dashboard/bloc/dashboard_bloc.dart';
+
 import 'package:grocery_yellow/connectivity/connectivity_bloc/bloc/connectivity_bloc.dart';
 import 'package:grocery_yellow/location_service/location_cubit/location_cubit.dart';
 import 'package:grocery_yellow/router_generator.dart';
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
           create: (context) => LocationCubit(),
         ),
         BlocProvider<ConnectivityBloc>(
-            create: (context) => ConnectivityBloc(connectivity: connectivity))
+            create: (context) => ConnectivityBloc(connectivity: connectivity)),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',

@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:grocery_yellow/authentication2/domain/auth/iauth_service2.dart';
+import 'package:grocery_yellow/authentication2/infrastructure/iauth_service2.dart';
 import 'package:grocery_yellow/authentication2/infrastructure/firebase_auth2.dart';
 
 import '../domain/auth/auth_failure.dart';

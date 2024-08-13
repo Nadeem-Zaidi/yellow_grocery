@@ -1,6 +1,0 @@
-protoc --dart_out=grpc:lib/proto_files --proto_path=lib/grp/proto_files lib/grp/proto_files/product.proto
-
-
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-dart pub global activate protoc_plugin

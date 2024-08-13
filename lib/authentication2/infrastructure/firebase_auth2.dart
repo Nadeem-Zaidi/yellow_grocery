@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:grocery_yellow/authentication2/domain/auth/auth_failure.dart';
-import 'package:grocery_yellow/authentication2/domain/auth/iauth_service2.dart';
+import 'package:grocery_yellow/authentication2/infrastructure/iauth_service2.dart';
 
 import '../domain/auth/auth_user_model.dart';
 import './firebase_mapper.dart';
@@ -25,7 +25,6 @@ class FirebaseAuth2Service implements IAuthService {
         verificationCompleted: (PhoneAuthCredential credential) async {
           // ANDROID ONLY!
           // Sign the user in (or link) with the auto-generated credential.
-          // The feature is currently disabled for the sake of simplicity of the tutorial.
         },
         codeSent: (String verificationId, int? resendToken) async {
           // Update the UI - wait for the user to enter the SMS code
